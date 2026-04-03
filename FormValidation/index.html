@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <div style="display:flex; flex-direction: column; align-items: center; height: 100vh;">
+        <h1>Sign Up</h1>
+        <form style="display: flex; flex-direction: column; gap: 10px; width:50%;" id="signUpForm" >
+          <label for="name">Name</label>
+          <input style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; " type="text" id="name" name="name" />
+          <label for="email">Email</label>
+          <input style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; " type="email" id="email" name="email" />
+           <label for="number">Mobile Number</label>
+          <input style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; " type="number" id="number" name="number"/>
+          <button style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; " type="submit">Sign Up</button>
+        </form>
+
+        <div>
+            <h4>User Data</h4>
+            <table border="1" id="userTable" style="width:100%; border-collapse: collapse; text-align: center;">
+                 <thead>
+                    <tr>
+                        <th style="padding: 5px 40px;">Name</th>
+                        <th style="padding: 5px 40px;">Email</th>
+                        <th style="padding: 5px 40px;">Mobile Number</th>
+                    </tr>
+                 </thead>
+                 <tbody id="tableBody">
+
+                 </tbody>
+            </table>
+        </div>
+      </div>
+
+      <script src="./script.js"></script>
+</body>
+</html>
